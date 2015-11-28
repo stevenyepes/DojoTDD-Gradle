@@ -7,7 +7,7 @@ test {
 
 	jacoco {
 		toolVersion = '0.7.1.201405082137'
-		destinationFile = file("../build/jacoco/jacoco.exec")
+		destinationFile = file("build/jacoco/jacoco.exec")
 		append = true
 	}
 }

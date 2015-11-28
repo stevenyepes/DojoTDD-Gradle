@@ -1,6 +1,17 @@
 
 apply plugin: 'java'
 
+apply plugin: 'jacoco'
+
+test {
+
+	jacoco {
+		toolVersion = '0.7.1.201405082137'
+		destinationFile = file("../build/jacoco/jacoco.exec")
+		append = true
+	}
+}
+
 sourceSets{
 	
 	main{
